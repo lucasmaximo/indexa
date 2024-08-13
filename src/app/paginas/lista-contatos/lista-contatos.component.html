@@ -1,5 +1,9 @@
-<app-container>
-    <app-cabecalho></app-cabecalho>
+  <app-container>
+    <app-cabecalho 
+      [telaInicial]="true" 
+      [bannerSrc]="'banner.png'" 
+      [titulo]="'Organize, <span>conecte,</span> simplifique!'">
+    </app-cabecalho>
   
     <input type="search" placeholder="Digite para buscar"  [(ngModel)]="filtroPorTexto">
   
